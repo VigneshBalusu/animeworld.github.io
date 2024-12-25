@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="Helpstyles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video id="backgroundVideo" autoplay muted loop>
+            <source src="HelpVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="playButton" class="play-button">
+            <span class="sound-icon">&#128266;</span> Enable Sound
+        </button>
+    </div>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="Home.html" class="nav-item">Home</a>
+            <a href="Explore.html" class="nav-item">Explore</a>
+            <a href="About.html" class="nav-item">About Us</a>
+            <a href="Help.html" class="nav-item">Help</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-item" id="loginButton">Login</a>
+            <a href="#" class="nav-item" id="signupButton">Signup</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Help</h1>
+        <h2>Home Page</h2>
+        <p>The Home page is the welcome page of our website. It gives an introduction to the world of anime and sets the stage for exploring all the content we offer.</p>
+        <h2>Explore Page</h2>
+        <p>The Explore page is where you can find detailed information about different anime characters and their feats. Dive deep into the world of anime and discover your favorite characters' backgrounds, abilities, and achievements.</p>
+        <h2>About Us Page</h2>
+        <p>The About Us page provides information about our website, our mission, and what we offer. Learn more about our dedication to bringing you the most comprehensive collection of anime characters and their incredible feats.</p>
+        <h2>Admin Contact</h2>
+        <p>If you need any assistance or have any inquiries, please contact us at: <strong>animeworld@gmail.com</strong></p>
+    </div>
+
+    <!-- Modal for Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail">
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword">
+            <button id="loginSubmit">Submit</button>
+        </div>
+    </div>
+
+    <!-- Modal for Signup -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignup">&times;</span>
+            <h2>Signup</h2>
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" name="signupEmail">
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword">
+            <button id="signupSubmit">Submit</button>
+        </div>
+    </div>
+
+    <script src="Help.js"></script>
+</body>
+</html>

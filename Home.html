@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <link rel="stylesheet" href="Homestyles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video id="backgroundVideo" autoplay muted loop>
+            <source src="BackgroundVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="playButton" class="play-button">
+            <span class="sound-icon">&#128266;</span> <!-- Sound icon Unicode -->
+        </button>
+    </div>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="Home.html" class="nav-item">Home</a>
+            <a href="Explore.html" class="nav-item">Explore</a>
+            <a href="AboutUs.html" class="nav-item">About Us</a>
+            <a href="Help.html" class="nav-item">Help</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-item" id="loginButton">Login</a>
+            <a href="#" class="nav-item" id="signupButton">Signup</a>
+        </div>
+    </div>
+    <div class="home-content">
+        <h1>Welcome to the world of anime</h1>
+    </div>
+
+    <!-- Modal for Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail">
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword">
+            <button id="loginSubmit">Submit</button>
+        </div>
+    </div>
+
+    <!-- Modal for Signup -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignup">&times;</span>
+            <h2>Signup</h2>
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" name="signupEmail">
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword">
+            <button id="signupSubmit">Submit</button>
+        </div>
+    </div>
+
+    <script src="Homescripts.js"></script>
+</body>
+</html>

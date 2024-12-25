@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="Aboutstyles.css">
+</head>
+<body>
+    <div class="video-background">
+        <video id="backgroundVideo" autoplay muted loop>
+            <source src="AboutVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="playButton" class="play-button">
+            <span class="sound-icon">&#128266;</span> <!-- Sound icon Unicode -->
+        </button>
+    </div>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="Home.html" class="nav-item">Home</a>
+            <a href="Explore.html" class="nav-item">Explore</a>
+            <a href="AboutUs.html" class="nav-item">About Us</a>
+            <a href="Help.html" class="nav-item">Help</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-item" id="loginButton">Login</a>
+            <a href="#" class="nav-item" id="signupButton">Signup</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Welcome to <strong>Anime World</strong>, your ultimate destination for all things anime!</p>
+        <p>Our website is dedicated to bringing you the most comprehensive collection of anime characters and their incredible feats. Whether you are a die-hard fan or a curious newcomer, we have something for everyone.</p>
+        <h2>What We Offer:</h2>
+        <ul>
+            <li><strong>Character Profiles:</strong> Detailed information on your favorite anime characters, including their background, abilities, and story arcs.</li>
+            <li><strong>Feats and Achievements:</strong> Explore the amazing abilities and accomplishments of different characters across various anime series.</li>
+            <li><strong>Explore the World of Anime:</strong> Dive deep into the world of anime with our extensive database, allowing you to discover new characters and stories.</li>
+        </ul>
+        <h2>Our Mission:</h2>
+        <p>At <strong>Anime World</strong>, we aim to create a community where anime enthusiasts can come together to celebrate and explore the diverse and exciting world of anime. We are committed to providing accurate and up-to-date information on all your favorite characters and series.</p>
+        <h2>Join Us:</h2>
+        <p>Join our growing community and share your passion for anime. Whether you are here to read, learn, or discuss, <strong>Anime World</strong> is the perfect place for you.</p>
+        <p>Thank you for visiting <strong>Anime World</strong>. We hope you enjoy your stay and find everything you are looking for!</p>
+    </div>
+
+    <!-- Modal for Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <h2>Login</h2>
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail">
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword">
+            <button id="loginSubmit">Submit</button>
+        </div>
+    </div>
+
+    <!-- Modal for Signup -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignup">&times;</span>
+            <h2>Signup</h2>
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" name="signupEmail">
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword">
+            <button id="signupSubmit">Submit</button>
+        </div>
+    </div>
+
+    <script src="About.js"></script>
+</body>
+</html>

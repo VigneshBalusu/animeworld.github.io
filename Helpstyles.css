@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: auto; /* Enable scrollbars */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Center the video */
+}
+
+.play-button {
+    position: fixed;
+    top: 10px;  /* Position the button at the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button */
+    z-index: 10; /* Ensure the button is above other elements */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: navy;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sound-icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgoldenrodyellow; /* Light gold color */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 50px; /* Adjusted to ensure it doesn't overlap with the button */
+    box-sizing: border-box; /* Include padding in element's total width */
+    z-index: 2; /* Ensure navbar is above other content */
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    margin-left: auto; /* Pushes nav-right to the far right */
+}
+
+.nav-item {
+    color: navy; /* Dark navy blue */
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px; /* Smaller text size */
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    text-align: center;
+    color: navy; /* Dark navy blue for readability */
+    padding: 20px;
+    font-size: 24px;
+    animation: fadeIn 2s;
+    z-index: 1; /* Ensure content is below the navbar */
+    position: relative;
+    margin-top: 100px; /* Adjusted to ensure content starts below the navbar */
+}
+
+h1 {
+    margin-top: 100px; /* Ensure content starts below the navbar */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
