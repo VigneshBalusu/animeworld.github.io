@@ -16,6 +16,12 @@ playButton.addEventListener('click', () => {
         console.error('Error playing video:', error);
     });
 });
+
+// Add error handling for the video
+backgroundVideo.addEventListener('error', (error) => {
+    console.error('Video error:', error);
+});
+
 // Sample user data for demonstration purposes
 const users = [];
 
@@ -88,6 +94,6 @@ document.getElementById('loginSubmit').addEventListener('click', () => {
 document.getElementById('signupSubmit').addEventListener('click', () => {
     const email = document.getElementById('signupEmail').value;
     const password = document.getElementById('signupPassword').value;
-    signup(email,password);
-    loginModal.style.display='none';
-})
+    signup(email, password);
+    signupModal.style.display = 'none';
+});
